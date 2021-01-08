@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+ <include file="$(find usb_cam)/launch/usb_cam-test.launch" /> 
+ <!--<node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="Teleop" output="screen" />-->
+ <node pkg="rosserial_python" type="serial_node.py" name="base" output="screen" />
+</launch>
